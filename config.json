@@ -1,0 +1,10 @@
+{
+	"logLevel": "INFO",
+	"port": "8000",
+	"messengerPostURL": "https://graph.facebook.com/v2.6/me/messages",
+	"pageAccessToken": "EAAZAmmqIOFP8BACZBxFDqOfW0DGrWdIOQ4AzlXHeItGz5viVNoyCckRj44PYjOq8lSKxZBj5pLkZBq2NO3EHZBuYHE7oxmQj1NZAapQEqZABzcTVfK8TUE2tve3YvCVFC51rXiibVVKv3eiI5HrcBRSeUMB6ZAwLzvM1e71qOZAoqpQZDZD",
+	"weatherAPIKey": "0aada95fd60b83841d8927864d170f11",
+	"weatherEndpoint": "http://api.openweathermap.org/data/2.5/weather",
+	"imageAPIKEY": "3863293-b3c64b3df22e40b9be7d6aa8e",
+	"imageEndpoint": "https://pixabay.com/api/"
+}

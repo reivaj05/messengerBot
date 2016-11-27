@@ -1,0 +1,190 @@
+{"level":"fatal","msg":"msg","time":"2016-11-23T12:36:21-06:00"}
+{"level":"fatal","msg":"msg","time":"2016-11-23T12:37:11-06:00"}
+{"level":"info","message":"hey","msg":"Message received","time":"2016-11-23T15:47:17-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1479937638492:7ed3e0a321\"}","status":200,"time":"2016-11-23T15:47:18-06:00"}
+{"level":"info","message":"1","msg":"Message received","time":"2016-11-23T15:56:44-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1479938204920:80dcfb1f28\"}","status":200,"time":"2016-11-23T15:56:44-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-23T16:28:28-06:00","user":"1137104706416635"}
+{"err":"Post %20https://graph.facebook.com/v2.6/me/messages?access_token=EAAZAmmqIOFP8BALXVQaV02EY82718uRw1ZBwaGNplglA6Tk9qFaN9rmIZB3s93AsGHIr2ok6WGVOrl3OQhu63L7WHSK8b9A4ZC0JkTrvmx1Bsk5kwagdKl0cuFUkitJfWIzODQLBKAXKaIZC6Wh9tolqAPAZCju9F50SyHbBujxAZDZD: unsupported protocol scheme \"\"","level":"info","msg":"Request sent","response":"","status":-1,"time":"2016-11-23T16:28:28-06:00"}
+{"level":"info","message":"fgtyhujio","msg":"Message received","time":"2016-11-23T16:47:29-06:00","user":"1137104706416635"}
+{"err":"Post %20https://graph.facebook.com/v2.6/me/messages?access_token=EAAZAmmqIOFP8BALXVQaV02EY82718uRw1ZBwaGNplglA6Tk9qFaN9rmIZB3s93AsGHIr2ok6WGVOrl3OQhu63L7WHSK8b9A4ZC0JkTrvmx1Bsk5kwagdKl0cuFUkitJfWIzODQLBKAXKaIZC6Wh9tolqAPAZCju9F50SyHbBujxAZDZD: unsupported protocol scheme \"\"","level":"info","msg":"Request sent","response":"","status":-1,"time":"2016-11-23T16:47:29-06:00"}
+{"level":"info","message":"dffasa","msg":"Message received","time":"2016-11-23T16:58:37-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1479941918425:4a61095d32\"}","status":200,"time":"2016-11-23T16:58:38-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-23T16:58:38-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1479941919327:9164a49b53\"}","status":200,"time":"2016-11-23T16:58:39-06:00"}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T17:18:29-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T17:18:38-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T18:03:53-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T18:05:30-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T18:08:06-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-23T18:09:15-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T16:39:39-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T16:39:41-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:04:37-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:04:38-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:04:39-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:04:39-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:04:39-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:06:20-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:06:21-06:00","verify_token":""}
+{"level":"error","msg":"Validation failed","time":"2016-11-26T17:06:37-06:00","verify_token":""}
+{"level":"info","message":"Hey","msg":"Message received","time":"2016-11-26T17:30:59-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480203059068:49cc796a22\"}","status":200,"time":"2016-11-26T17:30:59-06:00"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T17:31:37-06:00","user":"1137104706416635"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-26T17:45:20-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480203919979:7e62b39332\"}","status":200,"time":"2016-11-26T17:45:20-06:00"}
+{"level":"info","message":"hey","msg":"Message received","time":"2016-11-26T18:00:42-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480204841980:1f9090cb52\"}","status":200,"time":"2016-11-26T18:00:42-06:00"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:00:46-06:00","user":"1137104706416635"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:01:48-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) Invalid keys \\\"message, recipient\\\" were found in param \\\"message\\\".\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"GD5QCAWIz0Y\"}}","status":400,"time":"2016-11-26T18:01:49-06:00"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:02:55-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) Invalid keys \\\"message, recipient\\\" were found in param \\\"message\\\".\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"HK1Tec0Fqix\"}}","status":400,"time":"2016-11-26T18:02:55-06:00"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:03:45-06:00","user":"1137104706416635"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:04:15-06:00","user":"1137104706416635"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:05:30-06:00","user":"1137104706416635"}
+{"level":"info","message":"generic","msg":"Message received","time":"2016-11-26T18:06:08-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480205168215:0668539833\"}","status":200,"time":"2016-11-26T18:06:08-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:23:27-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480206207026:7316f8f728\"}","status":200,"time":"2016-11-26T18:23:27-06:00"}
+{"level":"info","message":"Red","msg":"Message received","time":"2016-11-26T18:23:43-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480206223099:f4499dae72\"}","status":200,"time":"2016-11-26T18:23:43-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:39:31-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207171522:21148bde94\"}","status":200,"time":"2016-11-26T18:39:32-06:00"}
+{"level":"info","message":"Divorce","msg":"Message received","time":"2016-11-26T18:39:56-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207195669:455af66c71\"}","status":200,"time":"2016-11-26T18:39:56-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:40:00-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207200262:b2fe1f0057\"}","status":200,"time":"2016-11-26T18:40:00-06:00"}
+{"level":"info","message":"Adoption","msg":"Message received","time":"2016-11-26T18:40:02-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207202549:1af085a327\"}","status":200,"time":"2016-11-26T18:40:03-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:40:05-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207205093:49926dd275\"}","status":200,"time":"2016-11-26T18:40:05-06:00"}
+{"level":"info","message":"Other","msg":"Message received","time":"2016-11-26T18:40:18-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207218169:bef5630274\"}","status":200,"time":"2016-11-26T18:40:18-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:40:21-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207220898:76610b8a59\"}","status":200,"time":"2016-11-26T18:40:21-06:00"}
+{"level":"info","message":"Testament","msg":"Message received","time":"2016-11-26T18:40:29-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207228750:8f96805776\"}","status":200,"time":"2016-11-26T18:40:29-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:40:30-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207230087:760c5d1482\"}","status":200,"time":"2016-11-26T18:40:30-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:00-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207260215:70566f7a73\"}","status":200,"time":"2016-11-26T18:41:00-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:07-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207267363:2e791e0d94\"}","status":200,"time":"2016-11-26T18:41:08-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:11-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207271053:7d38524a52\"}","status":200,"time":"2016-11-26T18:41:11-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:23-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207282790:1758518751\"}","status":200,"time":"2016-11-26T18:41:23-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:26-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207286320:8378069c10\"}","status":200,"time":"2016-11-26T18:41:27-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:30-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207290285:a1f7803520\"}","status":200,"time":"2016-11-26T18:41:30-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:36-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207295601:1d7e177924\"}","status":200,"time":"2016-11-26T18:41:36-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:41:40-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207300037:a91dade037\"}","status":200,"time":"2016-11-26T18:41:40-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:42:05-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207325074:d6bb2cea65\"}","status":200,"time":"2016-11-26T18:42:05-06:00"}
+{"level":"info","message":"Divorce","msg":"Message received","time":"2016-11-26T18:42:08-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207328218:ac51b20866\"}","status":200,"time":"2016-11-26T18:42:08-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:42:09-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207329340:88b603c055\"}","status":200,"time":"2016-11-26T18:42:10-06:00"}
+{"level":"info","message":"Divorce","msg":"Message received","time":"2016-11-26T18:42:13-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207332885:1f6dee3a50\"}","status":200,"time":"2016-11-26T18:42:13-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:42:15-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207335337:2b1a23e678\"}","status":200,"time":"2016-11-26T18:42:16-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:42:22-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207342241:a30269b450\"}","status":200,"time":"2016-11-26T18:42:22-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:47:52-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207672050:03cdf88c13\"}","status":200,"time":"2016-11-26T18:47:52-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:49:18-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207758389:96ef361434\"}","status":200,"time":"2016-11-26T18:49:19-06:00"}
+{"level":"info","message":"68","msg":"Message received","time":"2016-11-26T18:49:26-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207765597:3c33cb8537\"}","status":200,"time":"2016-11-26T18:49:26-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T18:51:25-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207885639:2ce7045316\"}","status":200,"time":"2016-11-26T18:51:26-06:00"}
+{"level":"info","message":"Other","msg":"Message received","time":"2016-11-26T18:51:32-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480207891550:1399ddc490\"}","status":200,"time":"2016-11-26T18:51:32-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-26T19:01:07-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480208466743:2efdec3538\"}","status":200,"time":"2016-11-26T19:01:07-06:00"}
+{"level":"info","message":"Testament","msg":"Message received","time":"2016-11-26T19:01:21-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480208481314:9758971c09\"}","status":200,"time":"2016-11-26T19:01:22-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-27T09:59:12-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480262352865:028f03f095\"}","status":200,"time":"2016-11-27T09:59:13-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-27T09:59:22-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480262362015:3bcf612b10\"}","status":200,"time":"2016-11-27T09:59:22-06:00"}
+{"level":"info","message":"start","msg":"Message received","time":"2016-11-27T09:59:30-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480262369870:8dcd582897\"}","status":200,"time":"2016-11-27T09:59:30-06:00"}
+{"level":"info","message":"weather guadalajara","msg":"Message received","time":"2016-11-27T09:59:46-06:00","user":"1137104706416635"}
+{"level":"info","message":"weather guadalajara","msg":"Message received","time":"2016-11-27T10:00:39-06:00","user":"1137104706416635"}
+{"level":"info","message":"weather guadalajara","msg":"Message received","time":"2016-11-27T10:01:37-06:00","user":"1137104706416635"}
+{"level":"info","message":"weather guadalajara","msg":"Message received","time":"2016-11-27T10:12:16-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480263136987:f03cf60783\"}","status":200,"time":"2016-11-27T10:12:17-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:23:24-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480263804447:e7c32caa69\"}","status":200,"time":"2016-11-27T10:23:24-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:23:27-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480263807014:9097499b81\"}","status":200,"time":"2016-11-27T10:23:27-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:23:47-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:24:34-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:26:03-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:38:53-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) The parameter message[attachment][payload] is required\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"ClXDN6mD3AC\"}}","status":400,"time":"2016-11-27T10:38:54-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:39:51-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:43:24-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) The parameter message[attachment][payload] is required\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"AQEGxIaxWu\\/\"}}","status":400,"time":"2016-11-27T10:43:25-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:43:59-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) The parameter message[attachment][payload] is required\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"GwUdeXd1NNi\"}}","status":400,"time":"2016-11-27T10:44:00-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:44:14-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) The parameter message[attachment][payload] is required\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"BJaCa5\\/5w\\/c\"}}","status":400,"time":"2016-11-27T10:44:14-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:44:53-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#100) The parameter message[attachment][payload] is required\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"AoR3sYBiSPQ\"}}","status":400,"time":"2016-11-27T10:44:55-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:46:23-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#194) param [elements] has too few elements.\",\"type\":\"OAuthException\",\"code\":194,\"fbtrace_id\":\"G4bnAt+nIpy\"}}","status":400,"time":"2016-11-27T10:46:24-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:46:45-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:48:24-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#194) param [elements] has too few elements.\",\"type\":\"OAuthException\",\"code\":194,\"fbtrace_id\":\"D6+8YHfqHNd\"}}","status":400,"time":"2016-11-27T10:48:26-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:49:39-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:50:14-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"error\":{\"message\":\"(#194) param [elements] has too few elements.\",\"type\":\"OAuthException\",\"code\":194,\"fbtrace_id\":\"AIuNDlK7IST\"}}","status":400,"time":"2016-11-27T10:50:15-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:51:16-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480265478238:d933275664\"}","status":200,"time":"2016-11-27T10:51:18-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:53:02-06:00","user":"1137104706416635"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:55:04-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480265705401:e49be38a85\"}","status":200,"time":"2016-11-27T10:55:05-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T10:59:22-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480265963874:d199a74101\"}","status":200,"time":"2016-11-27T10:59:24-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T11:02:15-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266136701:6808d34065\"}","status":200,"time":"2016-11-27T11:02:17-06:00"}
+{"level":"info","message":"image me dog","msg":"Message received","time":"2016-11-27T11:02:33-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266154103:ded3be7014\"}","status":200,"time":"2016-11-27T11:02:34-06:00"}
+{"level":"info","message":"image me sky","msg":"Message received","time":"2016-11-27T11:05:28-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266329293:025d82d393\"}","status":200,"time":"2016-11-27T11:05:29-06:00"}
+{"level":"info","message":"image me sky","msg":"Message received","time":"2016-11-27T11:10:17-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266618238:3c93e14b67\"}","status":200,"time":"2016-11-27T11:10:18-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-27T11:10:38-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266638503:81640f6a33\"}","status":200,"time":"2016-11-27T11:10:38-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-27T11:12:38-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266758686:12cda69326\"}","status":200,"time":"2016-11-27T11:12:39-06:00"}
+{"level":"info","message":"Divorce","msg":"Message received","time":"2016-11-27T11:15:53-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266953611:10d5f74947\"}","status":200,"time":"2016-11-27T11:15:54-06:00"}
+{"level":"info","message":"Testament","msg":"Message received","time":"2016-11-27T11:15:54-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266954390:fe0491fa83\"}","status":200,"time":"2016-11-27T11:15:54-06:00"}
+{"level":"info","message":"image me dog","msg":"Message received","time":"2016-11-27T11:15:54-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266955536:a874c31c53\"}","status":200,"time":"2016-11-27T11:15:55-06:00"}
+{"level":"info","message":"image me sky","msg":"Message received","time":"2016-11-27T11:15:55-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266956055:508830a763\"}","status":200,"time":"2016-11-27T11:15:56-06:00"}
+{"level":"info","message":"hey","msg":"Message received","time":"2016-11-27T11:15:56-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266956281:7d3ec27247\"}","status":200,"time":"2016-11-27T11:15:56-06:00"}
+{"level":"info","message":"image me beach","msg":"Message received","time":"2016-11-27T11:15:56-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266956768:c927e30379\"}","status":200,"time":"2016-11-27T11:15:57-06:00"}
+{"level":"info","message":"image me cat","msg":"Message received","time":"2016-11-27T11:15:57-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480266957267:8ea1257415\"}","status":200,"time":"2016-11-27T11:15:57-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-27T11:54:07-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269247773:a87931f711\"}","status":200,"time":"2016-11-27T11:54:08-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-27T11:54:19-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269259330:9e22a9a602\"}","status":200,"time":"2016-11-27T11:54:19-06:00"}
+{"level":"info","message":"hello","msg":"Message received","time":"2016-11-27T12:00:01-06:00","user":"1137104706416635"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269601555:2b726c0860\"}","status":200,"time":"2016-11-27T12:00:01-06:00"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269631417:08d9d84d13\"}","status":200,"time":"2016-11-27T12:00:31-06:00"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269696180:4712392666\"}","status":200,"time":"2016-11-27T12:01:36-06:00"}
+{"err":null,"level":"info","msg":"Request sent","response":"{\"recipient_id\":\"1137104706416635\",\"message_id\":\"mid.1480269711302:5237531698\"}","status":200,"time":"2016-11-27T12:01:51-06:00"}
