@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/reivaj05/GoConfig"
 	"github.com/reivaj05/GoJSON"
@@ -18,7 +17,11 @@ const (
 	adoptionLegalProcess   = "ADOPTION_LEGAL_PROCESS"
 	testamentLegalProcess  = "TESTAMENT_LEGAL_PROCESS"
 	corruptionLegalProcess = "CORRUPTION_LEGAL_PROCESS"
-	otherLegalProcess      = "OTHER_LEGAL_PROCESS"
+	divorceLawyers         = "DIVORCE_LAWYERS"
+	adoptionLawyers        = "ADOPTION_LAWYERS"
+	testamentLawyers       = "TESTAMENT_LAWYERS"
+	corruptionLawyers      = "CORRUPTION_LAWYERS"
+	askLegalQuestion       = "ASK_LEGAL_QUESTION"
 )
 
 var legalData = [][]string{
@@ -26,7 +29,7 @@ var legalData = [][]string{
 	[]string{"Adoption", adoptionLegalProcess},
 	[]string{"Testament", testamentLegalProcess},
 	[]string{"Corruption", corruptionLegalProcess},
-	[]string{"Other", otherLegalProcess},
+	[]string{"Ask question", askLegalQuestion},
 }
 
 func getWebhookHandler(rw http.ResponseWriter, req *http.Request) {
@@ -81,6 +84,7 @@ func processMessages(messages []*GoJSON.JSONWrapper) {
 }
 
 func processMessage(message *GoJSON.JSONWrapper) {
+	// TODO: Refactor
 	if message.HasPath("optin") {
 		fmt.Println("Implement authentication")
 	} else if message.HasPath("message") {
@@ -88,7 +92,7 @@ func processMessage(message *GoJSON.JSONWrapper) {
 	} else if message.HasPath("delivery") {
 		fmt.Println("Implement delivery")
 	} else if message.HasPath("postback") {
-		fmt.Println("Implement postback")
+		handlePostback(message)
 	} else if message.HasPath("read") {
 		fmt.Println("Implement read")
 	} else if message.HasPath("account_linking") {
@@ -99,93 +103,83 @@ func processMessage(message *GoJSON.JSONWrapper) {
 }
 
 func sendMessageBackToUser(message *GoJSON.JSONWrapper) {
-	fmt.Println("message")
+	// TODO: Refactor
 	senderID, _ := message.GetStringFromPath("sender.id")
 	text, _ := message.GetStringFromPath("message.text")
 	GoLogger.LogInfo("Message received", map[string]interface{}{
 		"user":    senderID,
 		"message": text,
 	})
+	if message.HasPath("message.quick_reply") {
+		payload, _ := message.GetStringFromPath("message.quick_reply.payload")
+		process := ""
+		payloadPostback := ""
+		switch payload {
+		case divorceLegalProcess:
+			process = "Divorce"
+			payloadPostback = divorceLawyers
+		case adoptionLegalProcess:
+			process = "Adoption"
+			payloadPostback = adoptionLawyers
+		case testamentLegalProcess:
+			process = "Testament"
+			payloadPostback = testamentLawyers
+		case corruptionLegalProcess:
+			process = "Corruption"
+			payloadPostback = corruptionLawyers
+		case askLegalQuestion:
+			sendTextMessage("Type your question, I'll give you the best results I find", senderID)
+			return
+		case "subscribe":
+			sendTextMessage("You have been subscribed", senderID)
+			return
+		case "nosubscribe":
+			sendTextMessage("OK! come back soon!", senderID)
+			return
+		}
+		sendLegalProcessMsg(process, payloadPostback, senderID)
+		return
+	}
 	if text == "start" {
 		sendStartMessage(senderID)
-	} else if strings.HasPrefix(text, "weather") {
-		sendWeatherMessage(text, senderID)
-	} else if strings.HasPrefix(text, "image me") {
-		sendImageMessage(text, senderID)
+	} else if text == "help" {
+		sendHelpMessage(senderID)
+	} else if text == "subscribe" {
+		sendSubscribeMessage(senderID)
 	} else {
-		sendTextMessage(text, senderID)
+		// TODO: Train nlp model
+		sendTextMessage("The answer is 42, don't look anymore", senderID)
 	}
+}
+
+func sendLegalProcessMsg(process, payloadPostback, senderID string) {
+	body := createLegalProcessBody(process, payloadPostback)
+	callSendAPI(senderID, body)
+}
+
+func createLegalProcessBody(process, payloadPostback string) *GoJSON.JSONWrapper {
+	// TODO: refactor
+	legalBody, _ := GoJSON.New("{}")
+	legalBody.SetValueAtPath("attachment.type", "template")
+	legalBody.SetValueAtPath("attachment.payload.template_type", "button")
+	legalBody.SetValueAtPath("attachment.payload.text", "Select the option you want")
+	button, _ := GoJSON.New("{}")
+	button.SetValueAtPath("type", "web_url")
+	button.SetValueAtPath("url", "http://www.google.com")
+	button.SetValueAtPath("title", "FAQ")
+
+	button2, _ := GoJSON.New("{}")
+	button2.SetValueAtPath("type", "postback")
+	button2.SetValueAtPath("title", process+" lawyers")
+	button2.SetValueAtPath("payload", payloadPostback)
+	legalBody.CreateJSONArrayAtPathWithArray("attachment.payload.buttons", []*GoJSON.JSONWrapper{button, button2})
+
+	return legalBody
 }
 
 func sendStartMessage(senderID string) {
-	// TODO: Clean and refactor, no sensitive
 	startBody := createStartBody()
 	callSendAPI(senderID, startBody)
-}
-
-func sendWeatherMessage(text, senderID string) {
-	city := strings.Split(text, " ")[1]
-	requesterObj := requester.New()
-	values := url.Values{}
-	values.Add("APPID", GoConfig.GetConfigStringValue("weatherAPIKey"))
-	values.Add("q", city)
-	config := &requester.RequestConfig{
-		Method: "GET",
-		URL:    GoConfig.GetConfigStringValue("weatherEndpoint"),
-		Values: values,
-	}
-	response, _, _ := requesterObj.MakeRequest(config)
-	sendTextMessage(createWeatherResponse(response), senderID)
-}
-
-func sendImageMessage(text, senderID string) {
-	imageQuery := strings.Split(text, " ")[2]
-	requesterObj := requester.New()
-	values := url.Values{}
-	values.Add("key", GoConfig.GetConfigStringValue("imageAPIKEY"))
-	values.Add("q", imageQuery)
-	values.Add("per_page", "3")
-	config := &requester.RequestConfig{
-		Method: "GET",
-		URL:    GoConfig.GetConfigStringValue("imageEndpoint"),
-		Values: values,
-	}
-	response, _, _ := requesterObj.MakeRequest(config)
-
-	imageBody := createImageBody(response)
-	callSendAPI(senderID, imageBody)
-}
-
-func createImageBody(response string) *GoJSON.JSONWrapper {
-	imageBody, _ := GoJSON.New("{}")
-	imageBody.SetValueAtPath("attachment.type", "template")
-	imageBody.SetValueAtPath("attachment.payload.template_type", "generic")
-	jsonImage, _ := GoJSON.New(response)
-	elements := createImageElementsArray(jsonImage)
-	imageBody.CreateJSONArrayAtPathWithArray("attachment.payload.elements", elements)
-	return imageBody
-}
-
-func createImageElementsArray(jsonImage *GoJSON.JSONWrapper) (elements []*GoJSON.JSONWrapper) {
-
-	for _, image := range jsonImage.GetArrayFromPath("hits") {
-		previewURL, _ := image.GetStringFromPath("pageURL")
-		pageURL, _ := image.GetStringFromPath("previewURL")
-		element, _ := GoJSON.New("{}")
-		element.SetValueAtPath("title", "Image")
-		element.SetValueAtPath("item_url", previewURL)
-		element.SetValueAtPath("image_url", pageURL)
-		elements = append(elements, element)
-	}
-	return elements
-}
-
-func createWeatherResponse(weatherResponse string) string {
-	jsonWeather, _ := GoJSON.New(weatherResponse)
-	text := "The weather for today in %s is %s"
-	weather, _ := jsonWeather.GetArrayFromPath("weather")[0].GetStringFromPath("main")
-	city, _ := jsonWeather.GetStringFromPath("name")
-	return fmt.Sprintf(text, city, weather)
 }
 
 func createStartBody() *GoJSON.JSONWrapper {
@@ -207,10 +201,112 @@ func addQuickRepliesToStartBody(startBody *GoJSON.JSONWrapper) *GoJSON.JSONWrapp
 	return startBody
 }
 
+func sendHelpMessage(senderID string) {
+	sendTextMessage("Hi, I'm your legal assistant and I'm gonna help you with everything you need", senderID)
+	helpBody := createHelpBody()
+	callSendAPI(senderID, helpBody)
+}
+
+func createHelpBody() *GoJSON.JSONWrapper {
+	// TODO: Refactor
+	helpBody, _ := GoJSON.New("{}")
+	helpBody.SetValueAtPath("attachment.type", "template")
+	helpBody.SetValueAtPath("attachment.payload.template_type", "button")
+	helpBody.SetValueAtPath("attachment.payload.text", "Are you ready to start?")
+	button, _ := GoJSON.New("{}")
+	button.SetValueAtPath("type", "postback")
+	button.SetValueAtPath("title", "Start")
+	button.SetValueAtPath("payload", "start")
+	helpBody.CreateJSONArrayAtPathWithArray("attachment.payload.buttons", []*GoJSON.JSONWrapper{button})
+	return helpBody
+}
+
+func sendSubscribeMessage(senderID string) {
+	subscribeBody := createSubscribeBody()
+	callSendAPI(senderID, subscribeBody)
+}
+
+func createSubscribeBody() *GoJSON.JSONWrapper {
+	subscribeBody, _ := GoJSON.New("{}")
+	subscribeBody.SetValueAtPath("text", "Do you want to subscribe to daily legal tips?")
+	subscribeBody.CreateJSONArrayAtPath("quick_replies")
+
+	element, _ := GoJSON.New("{}")
+	element.SetValueAtPath("content_type", "text")
+	element.SetValueAtPath("title", "yes")
+	element.SetValueAtPath("payload", "subscribe")
+	subscribeBody.ArrayAppendInPath("quick_replies", element)
+	element, _ = GoJSON.New("{}")
+	element.SetValueAtPath("content_type", "text")
+	element.SetValueAtPath("title", "no")
+	element.SetValueAtPath("payload", "nosubscribe")
+	subscribeBody.ArrayAppendInPath("quick_replies", element)
+	return subscribeBody
+}
+
 func sendTextMessage(text, senderID string) {
 	body, _ := GoJSON.New("{}")
 	body.SetValueAtPath("text", text)
 	callSendAPI(senderID, body)
+}
+
+func handlePostback(message *GoJSON.JSONWrapper) {
+	payload, _ := message.GetStringFromPath("postback.payload")
+	senderID, _ := message.GetStringFromPath("sender.id")
+	// process := ""
+	switch payload {
+	case divorceLawyers:
+		// process = "Divorce"
+	case adoptionLawyers:
+		// process = "Adoption"
+	case testamentLawyers:
+		// process = "Testament"
+	case corruptionLawyers:
+		// process = "Corruption"
+	case "start":
+		callSendAPI(senderID, createStartBody())
+		return
+	}
+	body := createExpertsLawyersBody()
+	callSendAPI(senderID, body)
+}
+
+func createExpertsLawyersBody() *GoJSON.JSONWrapper {
+	expertsBody, _ := GoJSON.New("{}")
+	expertsBody.SetValueAtPath("attachment.type", "template")
+	expertsBody.SetValueAtPath("attachment.payload.template_type", "generic")
+	var elements []*GoJSON.JSONWrapper
+	for i := 0; i < 5; i++ {
+		elements = append(elements, createExpertElement())
+	}
+	expertsBody.CreateJSONArrayAtPathWithArray("attachment.payload.elements", elements)
+	return expertsBody
+}
+
+func createExpertElement() *GoJSON.JSONWrapper {
+	// TODO: Refactor
+	element, _ := GoJSON.New("{}")
+	element.SetValueAtPath("title", "Robert Dobbins")
+	element.SetValueAtPath("image_url", "https://cdndata.bigfooty.com/2016/08/282084_47459072e9490ce8ddfdc9c29b6adc2a.jpg")
+
+	button, _ := GoJSON.New("{}")
+	button.SetValueAtPath("type", "web_url")
+	button.SetValueAtPath("url", "http://www.google.com")
+	button.SetValueAtPath("title", "Website")
+
+	button2, _ := GoJSON.New("{}")
+	button2.SetValueAtPath("type", "web_url")
+	button2.SetValueAtPath("url", "http://www.google.com")
+	button2.SetValueAtPath("title", "Make appointment")
+
+	button3, _ := GoJSON.New("{}")
+	button3.SetValueAtPath("type", "phone_number")
+	button3.SetValueAtPath("title", "Phone number")
+	button3.SetValueAtPath("payload", "+15105551234")
+
+	element.CreateJSONArrayAtPathWithArray("buttons", []*GoJSON.JSONWrapper{
+		button, button2, button3})
+	return element
 }
 
 func callSendAPI(senderID string, body *GoJSON.JSONWrapper) {
@@ -253,25 +349,4 @@ func createRequestHeaders() map[string]string {
 	return map[string]string{
 		"Content-Type": "application/json",
 	}
-}
-
-func gitWebhookHandler(rw http.ResponseWriter, req *http.Request) {
-	data := parseRequestBody(req)
-	repoName, _ := data.GetStringFromPath("repository.name")
-	repoURL, _ := data.GetStringFromPath("repository.url")
-	pusherName, _ := data.GetStringFromPath("pusher.name")
-
-	gitBody, _ := GoJSON.New("{}")
-	gitBody.SetValueAtPath("attachment.type", "template")
-	gitBody.SetValueAtPath("attachment.payload.template_type", "generic")
-	element, _ := GoJSON.New("{}")
-	element.SetValueAtPath("title", pusherName+" has pushed to repo: "+repoName)
-	button, _ := GoJSON.New("{}")
-	button.SetValueAtPath("type", "web_url")
-	button.SetValueAtPath("url", repoURL)
-	button.SetValueAtPath("title", "View repo")
-	element.CreateJSONArrayAtPathWithArray("buttons", []*GoJSON.JSONWrapper{button})
-	gitBody.CreateJSONArrayAtPathWithArray("attachment.payload.elements", []*GoJSON.JSONWrapper{element})
-	callSendAPI("1137104706416635", gitBody)
-	GoServer.SendResponseWithStatus(rw, data.ToString(), http.StatusOK)
 }

@@ -15,9 +15,4 @@ var Endpoints = []*GoServer.Endpoint{
 		Path:    "/webhook/",
 		Handler: postWebhookHandler,
 	},
-	&GoServer.Endpoint{
-		Method:  "POST",
-		Path:    "/git-webhook/",
-		Handler: gitWebhookHandler,
-	},
 }
